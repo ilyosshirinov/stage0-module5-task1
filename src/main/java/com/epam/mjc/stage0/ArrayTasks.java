@@ -10,13 +10,13 @@ import java.util.stream.Stream;
  */
 public class ArrayTasks { //3-misol
 
-//    /**
-//     * Return a String[] array that will list all the seasons of the year, starting with winter.
-//     * Qishdan boshlab yilning barcha fasllarini sanab o'tadigan String[] massivini qaytaring.
-//     */
-//    public String[] seasonsArray() {
-//        return null;
-//    }
+    /**
+     * Return a String[] array that will list all the seasons of the year, starting with winter.
+     * Qishdan boshlab yilning barcha fasllarini sanab o'tadigan String[] massivini qaytaring.
+     */
+    public String[] seasonsArray() {
+        return null;
+    }
 
     /**
      * Generate an int[] array of consecutive positive integers
@@ -37,70 +37,70 @@ public class ArrayTasks { //3-misol
         return a;
     }
 
-//    /**
-//     * Find the sum of all elements of the int[] array.
-//     * <p>
-//     * Example:
-//     * <p>
-//     * arr = [1, 3, 5]   -> sum = 9
-//     * arr = [5, -3, -4] -> sum = -2
-//     */
-//    public int totalSum(int[] arr) {
-//
-//    }
-//
-//    /**
-//     * Return the index of the first occurrence of number in the arr array.
-//     * If there is no such element in the array, return -1.
-//     * <p>
-//     * Example:
-//     * <p>
-//     * arr = [99, -7, 102], number = -7    ->   2
-//     * arr = [5, -3, -4],   number = 10    ->  -1
-//     */
-//    public int findIndexOfNumber(int[] arr, int number) {
-//
-//    }
-//
-//    /**
-//     * Return the new String[] array obtained from the arr array
-//     * by reversing the order of the elements.
-//     * <p>
-//     * Example:
-//     * <p>
-//     * arr = ["Bob", "Nick"]               -> ["Nick", "Bob"]
-//     * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
-//     */
-//    public String[] reverseArray(String[] arr) {
-//
-//    }
-//
-//    /**
-//     * Return new int[] array obtained from arr int[] array
-//     * by choosing positive numbers only.
-//     * P.S. 0 is not a positive number =)
-//     * <p>
-//     * Example:
-//     * <p>
-//     * arr = [1,-2, 3]      -> [1, 3]
-//     * arr = [-1, -2, -3]   -> []
-//     * arr = [1, 2]         -> [1, 2]
-//     */
-//    public int[] getOnlyPositiveNumbers(int[] arr) {
-//
-//    }
-//
-//    /**
-//     * Return a sorted, ragged, two-dimensional int[][] array following these rules:
-//     * Incoming one-dimensional arrays must be arranged in ascending order of their length;
-//     * numbers in all one-dimensional arrays must be in ascending order.
-//     * <p>
-//     * Example:
-//     * <p>
-//     * arr = [[3, 1, 2,], [3,2]] -> [[2, 3], [1, 2, 3]]
-//     * arr = [[5, 4], [7]]       -> [[7], [4, 5]]
-//     */
-//    public int[][] sortRaggedArray(int[][] arr) {
-//
-//    }
+    /**
+     * Find the sum of all elements of the int[] array.
+     * <p>
+     * Example:
+     * <p>
+     * arr = [1, 3, 5]   -> sum = 9
+     * arr = [5, -3, -4] -> sum = -2
+     */
+    public int totalSum(int[] arr) {
+
+    }
+
+    /**
+     * Return the index of the first occurrence of number in the arr array.
+     * If there is no such element in the array, return -1.
+     * <p>
+     * Example:
+     * <p>
+     * arr = [99, -7, 102], number = -7    ->   2
+     * arr = [5, -3, -4],   number = 10    ->  -1
+     */
+    public int findIndexOfNumber(int[] arr, int number) {
+
+    }
+
+    /**
+     * Return the new String[] array obtained from the arr array
+     * by reversing the order of the elements.
+     * <p>
+     * Example:
+     * <p>
+     * arr = ["Bob", "Nick"]               -> ["Nick", "Bob"]
+     * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
+     */
+    public String[] reverseArray(String[] arr) {
+
+    }
+
+    /**
+     * Return new int[] array obtained from arr int[] array
+     * by choosing positive numbers only.
+     * P.S. 0 is not a positive number =)
+     * <p>
+     * Example:
+     * <p>
+     * arr = [1,-2, 3]      -> [1, 3]
+     * arr = [-1, -2, -3]   -> []
+     * arr = [1, 2]         -> [1, 2]
+     */
+    public int[] getOnlyPositiveNumbers(int[] arr) {
+
+    }
+
+    /**
+     * Return a sorted, ragged, two-dimensional int[][] array following these rules:
+     * Incoming one-dimensional arrays must be arranged in ascending order of their length;
+     * numbers in all one-dimensional arrays must be in ascending order.
+     * <p>
+     * Example:
+     * <p>
+     * arr = [[3, 1, 2,], [3,2]] -> [[2, 3], [1, 2, 3]]
+     * arr = [[5, 4], [7]]       -> [[7], [4, 5]]
+     */
+    public int[][] sortRaggedArray(int[][] arr) {
+
+    }
 }

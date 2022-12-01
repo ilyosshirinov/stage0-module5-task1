@@ -45,12 +45,12 @@ public class ArrayTasksTest {
         assertTrue(notAllowedStrings.isEmpty(), "You use some not allowed utils, such as java.util.Arrays");
     }
 
-//    @Test
-//    public void seasonsArrayTest() {
-//        assertArrayEquals(Stream.of("winter", "spring", "summer", "autumn").toArray(),
-//                Arrays.stream(arrayTasks.seasonsArray()).map(String::toLowerCase).toArray(),
-//                "I think, you have mistake in order or name of season");
-//    }
+    @Test
+    public void seasonsArrayTest() {
+        assertArrayEquals(Stream.of("winter", "spring", "summer", "autumn").toArray(),
+                Arrays.stream(arrayTasks.seasonsArray()).map(String::toLowerCase).toArray(),
+                "I think, you have mistake in order or name of season");
+    }
 
     @ParameterizedTest
     @MethodSource("generatedNumbersTestProvider")
@@ -59,40 +59,40 @@ public class ArrayTasksTest {
                 "I think, something went wrong with number generation implementation");
     }
 
-//    @ParameterizedTest
-//    @MethodSource("reverseArrayTestProvider")
-//    public void reverseArrayTest(String[] arr, String[] expectedRevertedArray) {
-//        assertArrayEquals(expectedRevertedArray, arrayTasks.reverseArray(arr),
-//                "I think, something went wrong with reverse implementation");
-//    }
-//
-//    @ParameterizedTest
-//    @MethodSource("totalSumTestProvider")
-//    public void totalSumTest(int[] arr, int expectedSum) {
-//        assertEquals(expectedSum, arrayTasks.totalSum(arr),
-//                "I think, something went wrong with total sum implementation");
-//    }
-//
-//    @ParameterizedTest
-//    @MethodSource("findIndexOfNumberTestProvider")
-//    public void findIndexOfNumberTest(int[] arr, int number, int expectedIndex) {
-//        assertEquals(expectedIndex, arrayTasks.findIndexOfNumber(arr, number),
-//                "I think, something went wrong with finding index implementation");
-//    }
-//
-//    @ParameterizedTest
-//    @MethodSource("getOnlyPositiveNumbersTestProvider")
-//    public void getOnlyPositiveNumbersTest(int[] arr, int[] expectedArr) {
-//        assertArrayEquals(expectedArr, arrayTasks.getOnlyPositiveNumbers(arr));
-//    }
-//
-//    @ParameterizedTest
-//    @MethodSource("sortRaggedArrayProvider")
-//    public void sortRaggedArrayTest(RaggedArray arr, RaggedArray expectedArr) {
-//
-//        assertArrayEquals(expectedArr.getArr(), arrayTasks.sortRaggedArray(arr.getArr()),
-//                "I think, something went wrong with sorting ragged array implementation");
-//    }
+    @ParameterizedTest
+    @MethodSource("reverseArrayTestProvider")
+    public void reverseArrayTest(String[] arr, String[] expectedRevertedArray) {
+        assertArrayEquals(expectedRevertedArray, arrayTasks.reverseArray(arr),
+                "I think, something went wrong with reverse implementation");
+    }
+
+    @ParameterizedTest
+    @MethodSource("totalSumTestProvider")
+    public void totalSumTest(int[] arr, int expectedSum) {
+        assertEquals(expectedSum, arrayTasks.totalSum(arr),
+                "I think, something went wrong with total sum implementation");
+    }
+
+    @ParameterizedTest
+    @MethodSource("findIndexOfNumberTestProvider")
+    public void findIndexOfNumberTest(int[] arr, int number, int expectedIndex) {
+        assertEquals(expectedIndex, arrayTasks.findIndexOfNumber(arr, number),
+                "I think, something went wrong with finding index implementation");
+    }
+
+    @ParameterizedTest
+    @MethodSource("getOnlyPositiveNumbersTestProvider")
+    public void getOnlyPositiveNumbersTest(int[] arr, int[] expectedArr) {
+        assertArrayEquals(expectedArr, arrayTasks.getOnlyPositiveNumbers(arr));
+    }
+
+    @ParameterizedTest
+    @MethodSource("sortRaggedArrayProvider")
+    public void sortRaggedArrayTest(RaggedArray arr, RaggedArray expectedArr) {
+
+        assertArrayEquals(expectedArr.getArr(), arrayTasks.sortRaggedArray(arr.getArr()),
+                "I think, something went wrong with sorting ragged array implementation");
+    }
 
 
     private static Stream<Arguments> totalSumTestProvider() {

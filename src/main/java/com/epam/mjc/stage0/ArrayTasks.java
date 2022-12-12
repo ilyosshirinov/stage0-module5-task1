@@ -46,11 +46,11 @@ public class ArrayTasks { //3-misol
      * arr = [5, -3, -4] -> sum = -2
      */
     public int totalSum(int[] arr) {
-        int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+
+        for (int i = 1; i < arr.length; i++) {
+            arr[i] += arr[i - 1];
         }
-        return sum;
+        return arr[arr.length - 1];
     }
 
     /**
@@ -129,5 +129,9 @@ public class ArrayTasks { //3-misol
      */
     public int[][] sortRaggedArray(int[][] arr) {
         return arr;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
